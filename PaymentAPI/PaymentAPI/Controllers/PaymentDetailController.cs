@@ -54,10 +54,10 @@ namespace PaymentAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPaymentDetail(int id, PaymentDetail paymentDetail)
         {
-            if (id != paymentDetail.PaymentDetailId)
-            {
-                return BadRequest();
-            }
+            //if (id != paymentDetail.PaymentDetailId)
+            //{
+            //    return BadRequest();
+            //}
 
             _context.Entry(paymentDetail).State = EntityState.Modified;
 
